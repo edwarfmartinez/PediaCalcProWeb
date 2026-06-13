@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PediaCalc Pro — Pediatric Emergency Support Calculator</title>
+    <meta
+      name="description"
+      content="PediaCalc Pro helps clinicians calculate pediatric emergency doses, fluids, safety warnings, and saved clinical inputs directly on device."
+    >
+    <meta property="og:title" content="PediaCalc Pro">
+    <meta
+      property="og:description"
+      content="Pediatric emergency support calculator for quick scenarios, medications, fluids, and saved clinical inputs."
+    >
+    <meta property="og:image" content="PediaCalcProLogo.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="PediaCalcProLogo.png">
+    <link rel="apple-touch-icon" href="PediaCalcProLogo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="PediaCalc Pro home">
+          <img src="PediaCalcProLogo.png" alt="" width="42" height="42">
+          <span>PediaCalc Pro</span>
+        </a>
+        <div class="nav-links">
+          <a href="#quick">Quick</a>
+          <a href="#drugs">Drugs</a>
+          <a href="#fluids">Fluids</a>
+          <a href="#safety">Safety</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Pediatric emergency support calculator</p>
+            <h1>Fast pediatric calculations for critical moments.</h1>
+            <p class="lead">
+              PediaCalc Pro supports clinicians with weight-based emergency scenarios, drug dosing,
+              fluid calculations, safety warnings, neonatal context, and locally saved clinical inputs.
+            </p>
+            <div class="hero-actions" aria-label="App actions">
+              <a
+                class="app-store-badge"
+                href="https://apps.apple.com/app/6779873272"
+                aria-label="Download PediaCalc Pro on the App Store"
+              >
+                <img src="Download.png" alt="Download on the App Store" width="180" height="60">
+              </a>
+              <a class="button" href="mailto:support@valioralabs.com?subject=PediaCalc%20Pro%20Support">
+                Contact us
+              </a>
+            </div>
+            <div class="desktop-qr qr-card" aria-label="QR code for App Store download">
+              <img src="appstore-qr.svg" alt="QR code linking to PediaCalc Pro on the App Store" width="170" height="170">
+              <p>Scan to open the App Store listing.</p>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="App experience preview">
+            <div class="splash-preview">
+              <div class="phone-shell">
+                <div class="phone-screen">
+                  <div class="splash">
+                    <img class="splash-logo" src="PediaCalcProLogo.png" alt="" width="96" height="96">
+                    <div>
+                      <strong>PediaCalc Pro</strong>
+                      <span>Emergency support starts fast.</span>
+                    </div>
+                  </div>
+                  <div class="quick-panel">
+                    <h3>Quick scenarios</h3>
+                    <div class="scenario-grid">
+                      <div class="scenario-tile">
+                        <strong>Seizure</strong>
+                        <span>Dose, volume, repeat notes.</span>
+                      </div>
+                      <div class="scenario-tile">
+                        <strong>Anaphylaxis</strong>
+                        <span>Weight-based treatment direction.</span>
+                      </div>
+                      <div class="scenario-tile">
+                        <strong>Resuscitation</strong>
+                        <span>Safety warnings and context.</span>
+                      </div>
+                      <div class="scenario-tile">
+                        <strong>Asthma</strong>
+                        <span>Clinical guidance and links.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mini-tabs" aria-hidden="true">
+                    <span>Quick</span>
+                    <span>Drugs</span>
+                    <span>Fluids</span>
+                    <span>Saved</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <p class="notice">
+          PediaCalc Pro is a clinical support tool, not a substitute for clinician judgment,
+          local protocols, medication labeling, or institutional policies. Always verify calculations
+          before treatment.
+        </p>
+      </section>
+
+      <section id="quick" class="section">
+        <div class="container">
+          <h2>Quick emergency scenarios</h2>
+          <p class="section-intro">
+            The Quick tab is designed for common pediatric emergencies. Enter patient weight in
+            kilograms or pounds and review live dose and volume calculations with safety context.
+          </p>
+          <div class="cards three">
+            <article class="card">
+              <h3>Four visible scenarios</h3>
+              <p>
+                Seizure, Anaphylaxis, Cardiac Resuscitation, and Asthma Exacerbation are shown in
+                the Quick grid. Hypoglycemia is available in app data but is currently hidden.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Live clinical output</h3>
+              <p>
+                Each scenario can show calculated dose, volume, safety warnings, clinical context,
+                treatment direction, repeat notes, and evidence links.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Weight-aware inputs</h3>
+              <p>
+                Numeric-limited fields update results live and help flag invalid ranges, likely
+                pound/kilogram mistakes, and age-weight mismatches.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="drugs" class="section">
+        <div class="container">
+          <h2>Drug dosing reference</h2>
+          <p class="section-intro">
+            Search or browse 62 drug and dose entries by medication, indication, or route. Enter
+            patient weight and age, then expand a drug for calculation details.
+          </p>
+          <ul class="feature-list">
+            <li>Expanded drug cards show dose, volume, concentration, maximum dose, and warnings.</li>
+            <li>Max-dose caps and safety warnings are surfaced during review.</li>
+            <li>Neonate mode activates when age is under 28 days.</li>
+            <li>Neonatal-compatible drug filtering helps narrow choices for newborn patients.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="fluids" class="section">
+        <div class="container">
+          <h2>Fluid calculators</h2>
+          <p class="section-intro">
+            Built-in calculators cover common pediatric fluid workflows with live results and
+            warnings for clinically important boundaries.
+          </p>
+          <div class="cards">
+            <article class="card">
+              <h3>Maintenance</h3>
+              <p>
+                Holliday-Segar 100/50/20 calculation, hourly rate, 4-2-1 detail, and 10/20/60
+                mL/kg bolus estimates.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Sodium correction</h3>
+              <p>
+                Weight, current sodium, target sodium, symptom severity, correction rate, fluid
+                suggestion, estimated volume, and safe-change comparison.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Glucose infusion rate</h3>
+              <p>
+                Standard or custom dextrose concentration with infusion rate and low, typical,
+                elevated, or high GIR interpretation.
+              </p>
+            </article>
+            <article class="card">
+              <h3>IV drip rate</h3>
+              <p>
+                Volume, time in minutes or hours, drop factor 10/15/20/60 or custom, and final
+                drops per minute result.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="saved" class="section">
+        <div class="container">
+          <h2>Saved work, kept local</h2>
+          <p class="section-intro">
+            Favorites and recents help clinicians return to common calculations without requiring an
+            account, cloud sync, export workflow, or backend login.
+          </p>
+          <div class="highlight-grid">
+            <div class="highlight">
+              <h3>Favorite</h3>
+              <p>Save scenarios and drugs for faster access.</p>
+            </div>
+            <div class="highlight">
+              <h3>Reorder</h3>
+              <p>Arrange favorites to match clinical workflow.</p>
+            </div>
+            <div class="highlight">
+              <h3>Reopen</h3>
+              <p>Return to prior inputs from saved recents.</p>
+            </div>
+            <div class="highlight">
+              <h3>Clear</h3>
+              <p>Swipe-delete entries or clear all recents.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="safety" class="section">
+        <div class="container safety-band">
+          <h2>Safety and usability checks</h2>
+          <p class="section-intro">
+            PediaCalc Pro prioritizes transparent calculations and visible warnings so the user can
+            recognize inputs that require additional review.
+          </p>
+          <ul class="feature-list">
+            <li>Warnings for invalid ranges, possible unit mistakes, and age-weight mismatch.</li>
+            <li>Medication safeguards for maximum dose caps and neonatal context.</li>
+            <li>Fluid safeguards for sodium overcorrection, high GIR, and high drip rates.</li>
+            <li>Settings include feedback, feature requests, issue reporting, App Store review, and app version.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>PediaCalc Pro</strong>
+          <div>Pediatric emergency support calculator by Valiora Labs.</div>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="https://apps.apple.com/app/6779873272">App Store</a>
+          <a href="mailto:support@valioralabs.com?subject=PediaCalc%20Pro%20Support">Contact us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
